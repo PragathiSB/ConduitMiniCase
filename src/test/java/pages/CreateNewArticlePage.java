@@ -23,6 +23,9 @@ public class CreateNewArticlePage {
 	@FindBy(xpath="//button[text()='Publish Article']")
 	WebElement publishBtn;
 	
+	@FindBy(xpath="//span[text()='Title already exists.. ']")
+	WebElement invalidMsg;
+	
 	public CreateNewArticlePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -30,12 +33,21 @@ public class CreateNewArticlePage {
 	
 	public void createNewArticle(String title,String artDes,String artBody,String artTag)
 	{
+		articletitle.clear();
 		articletitle.sendKeys(title);
+		description.clear();
 		description.sendKeys(artDes);
+		body.clear();
 		body.sendKeys(artBody);
+		tags.clear();
 		tags.sendKeys(artTag);
 		publishBtn.click();
 		
+	}
+	
+	public String duplicateArticleMsg()
+	{
+		return invalidMsg.getText();
 	}
 	
 

@@ -24,7 +24,7 @@ import pages.EditPage;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.CreateNewArticlePage;
-import pages.NewArticlePage;
+import pages.ViewArticlePage;
 
 public class CondiutArticleTest {
       WebDriver driver;
@@ -32,7 +32,7 @@ public class CondiutArticleTest {
       LoginPage loginPage;
       Dashboard dashboard;
       CreateNewArticlePage crnwArticle;
-      NewArticlePage upArticle;
+      ViewArticlePage upArticle;
       EditPage edpage;
       ExtentReports extentReports;
   	ExtentSparkReporter spark;
@@ -46,7 +46,7 @@ public class CondiutArticleTest {
 		  loginPage=new LoginPage(driver); 
 		  dashboard=new Dashboard(driver);
 		  crnwArticle=new CreateNewArticlePage(driver);
-		  upArticle=new NewArticlePage(driver);
+		  upArticle=new ViewArticlePage(driver);
 		  edpage=new EditPage(driver);
 	  }
 	  
@@ -78,19 +78,27 @@ public class CondiutArticleTest {
 		  homepage.login();
 		  Assert.assertEquals(loginPage.getTitle(),"Sign in");
 	  }
-	  @Test(priority=2)
-	  public void login()
+	  @Test(priority=3)
+	  public void validloginTest() 
 	  {
-		  extentTest=extentReports.createTest("Login Test");
-			loginPage.login("pragathisayee@gmail.com","pragathi");
+		  extentTest=extentReports.createTest("Valid Login Test");
+			loginPage.login("pragathisayee@gmail.com","pragathi8");
 			String name=driver.findElement(By.xpath("//div[contains(text(),'pragathi')]")).getText();
 			Assert.assertEquals(name,"pragathi");
-//		  loginPage.login();
-//		  Assert.assertEquals(dashboard.getTitle(),"conduit");
+
 	  }
 	  
-	  @Test(priority=3)
-	  public void createArticle()
+	  @Test(priority=2)
+	  public void invalidloginTest() throws InterruptedException
+	  {
+		  extentTest=extentReports.createTest("Invalid Login Test");
+			loginPage.login("pragathisayee@gmail.com","pragathi");
+			 Assert.assertEquals(loginPage.inValidMsg(),"Wrong email/password combination");
+
+	  }
+	  
+	  @Test(priority=5)
+	  public void createArticleTest()
 	  {
 		  extentTest=extentReports.createTest("createArticle Test");
 		 String articletitle="Testing in selenium";
@@ -102,8 +110,21 @@ public class CondiutArticleTest {
 		 Assert.assertEquals(upArticle.getHeading(),"Testing in selenium");
 	  }
 	  
-	 @Test(priority=4)
-	 public void editArticle()
+	  @Test(priority=4)
+	  public void DuplicateArticleTest()
+	  {
+		  extentTest=extentReports.createTest("duplicateArticle Test");
+		 String articletitle="27";
+		 String description="2";
+		 String	body="2 ";
+		 String tags="automation";
+		 dashboard.navigateToNewArticlePage(); 
+		 crnwArticle.createNewArticle(articletitle,description,body,tags);
+		 Assert.assertEquals(crnwArticle.duplicateArticleMsg(),"Title already exists..");
+	  }
+	  
+	 @Test(priority=6)
+	 public void editArticleTest()
 	 {
 		 extentTest=extentReports.createTest("editarticle Test");
 		 upArticle.navigateToEditArticle();
@@ -111,15 +132,13 @@ public class CondiutArticleTest {
 		 Assert.assertEquals(upArticle.upBody(),"automation in testing");
 	 }
 	 
-	 @Test(priority=5)
-	 public void deleteArticle()
+	 @Test(priority=7)
+	 public void deleteArticleTest()
 	 {
 		 extentTest=extentReports.createTest("deleteArticle Test");
 		 upArticle.deleteArticle();
-		// driver.switchTo().alert().accept();
-		 Alert alert=driver.switchTo().alert();
-		  Assert.assertEquals(alert.getText(), "Want to delete the article?");
-		  alert.accept(); 
+		 Assert.assertEquals(upArticle.deleteCheck(), "Articles not available.");
+		
 	 }
 	 
 	  @AfterMethod

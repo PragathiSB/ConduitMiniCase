@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Feb 15, 2024 12:21:32 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 15, 2024 10:29:42 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Feb 15, 2024 12:21:32 pm</h3>
+<h3>Feb 15, 2024 10:29:42 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Feb 15, 2024 12:22:14 pm</h3>
+<h3>Feb 15, 2024 10:29:49 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>4</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,33 +105,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='20%'>
-<b>1</b> tests passed
+<div><small data-tooltip='100%'>
+<b>7</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='80%'><b>4</b> tests failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Log events</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='events-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
-<div>
-<small data-tooltip='100%'><b>8</b> events failed,
-<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -147,7 +127,7 @@
 </div></div>
 <script>
 var timeline = {
-"navigateLogin Test":0,"Login Test":10.418,"createArticle Test":10.197,"editarticle Test":10.25,"deleteArticle Test":10.28
+"navigateLogin Test":0,"Invalid Login Test":0,"Valid Login Test":0,"duplicateArticle Test":0,"createArticle Test":0,"editarticle Test":0,"deleteArticle Test":0
 };
 </script>
 <div class="row">
@@ -159,11 +139,11 @@ var timeline = {
 <tbody>
 <tr>
 <td>AutomationTester2-pragathiSB</td>
-<td>1</td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>20%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -176,11 +156,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>RegressionTest</td>
-<td>1</td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>20%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -194,19 +174,19 @@ var timeline = {
 <tbody>
 <tr>
 <td>Windows10</td>
-<td>1</td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>20%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>10.0</td>
-<td>1</td>
-<td>4</td>
+<td>7</td>
 <td>0</td>
 <td>0</td>
-<td>20%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -217,8 +197,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 4,
+passParent: 7,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -235,7 +215,7 @@ skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 passEvents: 0,
-failEvents: 8,
+failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0
@@ -251,7 +231,6 @@ infoEvents: 0
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -284,7 +263,7 @@ infoEvents: 0
           <div class="test-detail">
             <p class="name">navigateLogin Test</p>
             <p class="text-sm">
-              <span>12:21:33 pm</span> / <span>00:00:00:000</span>
+              <span>10:29:42 pm</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -293,8 +272,8 @@ infoEvents: 0
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">navigateLogin Test</h5>
-<span class='badge badge-success'>02.15.2024 12:21:33 pm</span>
-<span class='badge badge-danger'>02.15.2024 12:21:33 pm</span>
+<span class='badge badge-success'>02.15.2024 10:29:42 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:42 pm</span>
 <span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
@@ -308,25 +287,25 @@ infoEvents: 0
 </div>
 </div>          </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author="AutomationTester2-pragathiSB"
           tag="RegressionTest"
           device="10.0 Windows10">
           <div class="test-detail">
-            <p class="name">Login Test</p>
+            <p class="name">Invalid Login Test</p>
             <p class="text-sm">
-              <span>12:21:33 pm</span> / <span>00:00:10:418</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:29:43 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Login Test</h5>
-<span class='badge badge-success'>02.15.2024 12:21:33 pm</span>
-<span class='badge badge-danger'>02.15.2024 12:21:43 pm</span>
-<span class='badge badge-default'>00:00:10:418</span>
+<h5 class="test-status text-pass">Invalid Login Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:43 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:43 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -337,60 +316,27 @@ infoEvents: 0
 <span class="badge badge-pill badge-default">10.0</span>
 <span class="badge badge-pill badge-default">Windows10</span></div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:21:43 pm</td>
-        <td>
-          no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'pragathi')]"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dc014fca02e40306cbae9552fa7b22e, findElement {using=xpath, value=//div[contains(text(),'pragathi')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\PRAGAT~1.BIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dc014fca02e40306cbae9552fa7b22e
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:21:43 pm</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\workspace\ConduitMiniCase/screenshots/1707979903678.png' src="D:\workspace\ConduitMiniCase/screenshots/1707979903678.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author="AutomationTester2-pragathiSB"
           tag="RegressionTest"
           device="10.0 Windows10">
           <div class="test-detail">
-            <p class="name">createArticle Test</p>
+            <p class="name">Valid Login Test</p>
             <p class="text-sm">
-              <span>12:21:43 pm</span> / <span>00:00:10:197</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:29:44 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">createArticle Test</h5>
-<span class='badge badge-success'>02.15.2024 12:21:43 pm</span>
-<span class='badge badge-danger'>02.15.2024 12:21:53 pm</span>
-<span class='badge badge-default'>00:00:10:197</span>
+<h5 class="test-status text-pass">Valid Login Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:44 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:44 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -401,60 +347,27 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <span class="badge badge-pill badge-default">10.0</span>
 <span class="badge badge-pill badge-default">Windows10</span></div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:21:53 pm</td>
-        <td>
-          no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='New Article']"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dc014fca02e40306cbae9552fa7b22e, findElement {using=xpath, value=//a[text()='New Article']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\PRAGAT~1.BIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dc014fca02e40306cbae9552fa7b22e
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:21:53 pm</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\workspace\ConduitMiniCase/screenshots/1707979913883.png' src="D:\workspace\ConduitMiniCase/screenshots/1707979913883.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author="AutomationTester2-pragathiSB"
           tag="RegressionTest"
           device="10.0 Windows10">
           <div class="test-detail">
-            <p class="name">editarticle Test</p>
+            <p class="name">duplicateArticle Test</p>
             <p class="text-sm">
-              <span>12:21:53 pm</span> / <span>00:00:10:250</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:29:44 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">editarticle Test</h5>
-<span class='badge badge-success'>02.15.2024 12:21:53 pm</span>
-<span class='badge badge-danger'>02.15.2024 12:22:04 pm</span>
-<span class='badge badge-default'>00:00:10:250</span>
+<h5 class="test-status text-pass">duplicateArticle Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:44 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:44 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -465,60 +378,27 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <span class="badge badge-pill badge-default">10.0</span>
 <span class="badge badge-pill badge-default">Windows10</span></div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:22:03 pm</td>
-        <td>
-          no such element: Unable to locate element: {"method":"xpath","selector":"(//button//a[text()=' Edit Article'])[2]"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dc014fca02e40306cbae9552fa7b22e, findElement {using=xpath, value=(//button//a[text()=' Edit Article'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\PRAGAT~1.BIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dc014fca02e40306cbae9552fa7b22e
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:22:04 pm</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\workspace\ConduitMiniCase/screenshots/1707979924133.png' src="D:\workspace\ConduitMiniCase/screenshots/1707979924133.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
+</div>          </div>
         </li>
-        <li class="test-item"  status="fail" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author="AutomationTester2-pragathiSB"
           tag="RegressionTest"
           device="10.0 Windows10">
           <div class="test-detail">
-            <p class="name">deleteArticle Test</p>
+            <p class="name">createArticle Test</p>
             <p class="text-sm">
-              <span>12:22:04 pm</span> / <span>00:00:10:280</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:29:46 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">deleteArticle Test</h5>
-<span class='badge badge-success'>02.15.2024 12:22:04 pm</span>
-<span class='badge badge-danger'>02.15.2024 12:22:14 pm</span>
-<span class='badge badge-default'>00:00:10:280</span>
+<h5 class="test-status text-pass">createArticle Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:46 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:46 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -529,40 +409,69 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <span class="badge badge-pill badge-default">10.0</span>
 <span class="badge badge-pill badge-default">Windows10</span></div>
 </div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:22:14 pm</td>
-        <td>
-          no such element: Unable to locate element: {"method":"xpath","selector":"(//button[text()=' Delete Article'])[2]"}
-  (Session info: chrome=121.0.6167.161)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [1dc014fca02e40306cbae9552fa7b22e, findElement {using=xpath, value=(//button[text()=' Delete Article'])[2]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\PRAGAT~1.BIN\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49865}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49865/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 1dc014fca02e40306cbae9552fa7b22e
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>12:22:14 pm</td>
-        <td>
-          
-    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='D:\workspace\ConduitMiniCase/screenshots/1707979934416.png' src="D:\workspace\ConduitMiniCase/screenshots/1707979934416.png">
-    
-    </div></div>
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="AutomationTester2-pragathiSB"
+          tag="RegressionTest"
+          device="10.0 Windows10">
+          <div class="test-detail">
+            <p class="name">editarticle Test</p>
+            <p class="text-sm">
+              <span>10:29:47 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
           </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">editarticle Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:47 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:47 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AutomationTester2-pragathiSB</span>
+<span class="badge badge-pill badge-default">RegressionTest</span>
+<span class="badge badge-pill badge-default">10.0</span>
+<span class="badge badge-pill badge-default">Windows10</span></div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="AutomationTester2-pragathiSB"
+          tag="RegressionTest"
+          device="10.0 Windows10">
+          <div class="test-detail">
+            <p class="name">deleteArticle Test</p>
+            <p class="text-sm">
+              <span>10:29:48 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteArticle Test</h5>
+<span class='badge badge-success'>02.15.2024 10:29:48 pm</span>
+<span class='badge badge-danger'>02.15.2024 10:29:48 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">AutomationTester2-pragathiSB</span>
+<span class="badge badge-pill badge-default">RegressionTest</span>
+<span class="badge badge-pill badge-default">10.0</span>
+<span class="badge badge-pill badge-default">Windows10</span></div>
+</div>
+</div>          </div>
         </li>
       </ul>
     </div>
@@ -584,17 +493,15 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>4</span>
+<span class='badge log pass-bg'>7</span>
 </span>
 <p class="name">AutomationTester2-pragathiSB</p>
-<p class="duration text-sm">5 tests</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>AutomationTester2-pragathiSB</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -607,37 +514,51 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:21:33 pm</td>
+<td>22:29:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>navigateLogin Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:33 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>Login Test</a>
+<a href="#" class="linked" test-id='2' id='2'>Invalid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:43 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>createArticle Test</a>
+<a href="#" class="linked" test-id='3' id='3'>Valid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:53 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>editarticle Test</a>
+<a href="#" class="linked" test-id='4' id='4'>duplicateArticle Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:22:04 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>deleteArticle Test</a>
+<a href="#" class="linked" test-id='5' id='5'>createArticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>editarticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>deleteArticle Test</a>
 </td>
 </tr>
 </tbody>
@@ -663,17 +584,15 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>4</span>
+<span class='badge log pass-bg'>7</span>
 </span>
 <p class="name">Windows10</p>
-<p class="duration text-sm">5 tests</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Windows10</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -686,37 +605,51 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:21:33 pm</td>
+<td>22:29:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>navigateLogin Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:33 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>Login Test</a>
+<a href="#" class="linked" test-id='2' id='2'>Invalid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:43 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>createArticle Test</a>
+<a href="#" class="linked" test-id='3' id='3'>Valid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:53 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>editarticle Test</a>
+<a href="#" class="linked" test-id='4' id='4'>duplicateArticle Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:22:04 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>deleteArticle Test</a>
+<a href="#" class="linked" test-id='5' id='5'>createArticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>editarticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>deleteArticle Test</a>
 </td>
 </tr>
 </tbody>
@@ -726,17 +659,15 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-<span class='badge log badge-danger'>4</span>
+<span class='badge log pass-bg'>7</span>
 </span>
 <p class="name">10.0</p>
-<p class="duration text-sm">5 tests</p>
+<p class="duration text-sm">7 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>10.0</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-<span status="fail" class='badge log badge-danger'>4 failed</span>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -749,37 +680,51 @@ Session ID: 1dc014fca02e40306cbae9552fa7b22e
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>12:21:33 pm</td>
+<td>22:29:42 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>navigateLogin Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:33 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:43 pm</td>
 <td>
-<a href="#" class="linked" test-id='2' id='2'>Login Test</a>
+<a href="#" class="linked" test-id='2' id='2'>Invalid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:43 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='3' id='3'>createArticle Test</a>
+<a href="#" class="linked" test-id='3' id='3'>Valid Login Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:21:53 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='4' id='4'>editarticle Test</a>
+<a href="#" class="linked" test-id='4' id='4'>duplicateArticle Test</a>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>12:22:04 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>deleteArticle Test</a>
+<a href="#" class="linked" test-id='5' id='5'>createArticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>editarticle Test</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>22:29:48 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>deleteArticle Test</a>
 </td>
 </tr>
 </tbody>
