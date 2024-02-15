@@ -82,7 +82,7 @@ public class CondiutArticleTest {
 	  public void login()
 	  {
 		   
-			loginPage.login("pragathisa@gmail.com","pragathi8");
+			loginPage.login("pragathisayee@gmail.com","pragathi8");
 			String name=driver.findElement(By.xpath("//div[contains(text(),'pragathi')]")).getText();
 			Assert.assertEquals(name,"pragathi");
 //		  loginPage.login();
