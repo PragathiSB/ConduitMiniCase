@@ -8,8 +8,6 @@ import org.testng.Assert;
 
 public class NewArticlePage {
 	
-	@FindBy(css="h1")
-	WebElement hdr;
 	
 	@FindBy(xpath="(//button//a[text()=' Edit Article'])[2]")
 	WebElement editBtn;
@@ -20,6 +18,15 @@ public class NewArticlePage {
 	@FindBy(xpath="//div[contains(text(),'Articles not available.')]")
 	WebElement check;
 
+	@FindBy(xpath="//h1[contains(text(),'Testing in selenium')]")
+	WebElement hdr;
+	
+	
+//	@FindBy(xpath="//p[contains(text(),'2')]")
+//	WebElement upBody;
+
+	@FindBy(xpath="//textarea[@name='body']")
+	WebElement body;
 	
 	public NewArticlePage(WebDriver driver) 
 	{
@@ -34,5 +41,13 @@ public class NewArticlePage {
 	public void deleteArticle()
 	{
 		deleteBtn.click();
+	}
+	public String getHeading()
+	{
+		return hdr.getText();
+	}
+	public String upBody()
+	{
+		return body.getText();
 	}
 }

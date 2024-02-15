@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class LoginPage {
 
@@ -16,15 +17,23 @@ public class LoginPage {
 	@FindBy(xpath="//button[text()='Login']")
 	WebElement loginBtn;
 	
+	@FindBy(xpath="//h1[text()='Sign in']")
+	WebElement title;
+	
 	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void login()
+	public void login(String emailid,String pswd)
 	{
-		email.sendKeys("pragathisayee@gmail.com");
-		password.sendKeys("pragathi8");
+		email.sendKeys(emailid);
+		password.sendKeys(pswd);
 		loginBtn.click();
+	}
+	
+	public String getTitle()
+	{
+		return title.getText();
 	}
 }

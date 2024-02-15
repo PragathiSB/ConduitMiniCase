@@ -22,24 +22,20 @@ public class CreateNewArticlePage {
 	
 	@FindBy(xpath="//button[text()='Publish Article']")
 	WebElement publishBtn;
-	  @FindBy(xpath="//h1[contains(text(),'Testing in selenium')]")
-	WebElement hdr;
 	
 	public CreateNewArticlePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void createNewArticle()
+	public void createNewArticle(String title,String artDes,String artBody,String artTag)
 	{
-		articletitle.sendKeys("Testing in selenium");
-		description.sendKeys("Within your web app’s UI, there are areas where your tests interact with. A Page Object only models these as objects within the test code. This reduces the amount of duplicated code and means that if the UI changes, the fix needs only to be applied in one place.");
-		body.sendKeys("Page Object is a Design Pattern that has become popular in test automation for enhancing test maintenance and reducing code duplication. A page object is an object-oriented class that serves as an interface to a page of your AUT. The tests then use the methods of this page object class whenever they need to interact with the UI of that page. The benefit is that if the UI changes for the page, the tests themselves don’t need to change, only the code within the page object needs to change. Subsequently, all changes to support that new UI are located in one place.");
-		tags.sendKeys("automation");
+		articletitle.sendKeys(title);
+		description.sendKeys(artDes);
+		body.sendKeys(artBody);
+		tags.sendKeys(artTag);
 		publishBtn.click();
-		String headerName=hdr.getText();
-		System.out.println("New Article Title-"+headerName);
-		Assert.assertEquals(headerName,"Testing in selenium");
+		
 	}
 	
 
