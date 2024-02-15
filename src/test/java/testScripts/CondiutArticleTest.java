@@ -74,15 +74,15 @@ public class CondiutArticleTest {
 	  @Test(priority=1)
 	  public void navigateToLoginPageTest()
 	  {
-		  extentTest=extentReports.createTest("Login Test");
+		  extentTest=extentReports.createTest("navigateLogin Test");
 		  homepage.login();
 		  Assert.assertEquals(loginPage.getTitle(),"Sign in");
 	  }
 	  @Test(priority=2)
 	  public void login()
 	  {
-		   
-			loginPage.login("pragathisayee@gmail.com","pragathi8");
+		  extentTest=extentReports.createTest("Login Test");
+			loginPage.login("pragathisayee@gmail.com","pragathi");
 			String name=driver.findElement(By.xpath("//div[contains(text(),'pragathi')]")).getText();
 			Assert.assertEquals(name,"pragathi");
 //		  loginPage.login();
@@ -92,6 +92,7 @@ public class CondiutArticleTest {
 	  @Test(priority=3)
 	  public void createArticle()
 	  {
+		  extentTest=extentReports.createTest("createArticle Test");
 		 String articletitle="Testing in selenium";
 		 String description="Within your web app’s UI, there are areas where your tests interact with.";
 		 String	body="Page Object is a Design Pattern that has become popular in test automation ";
@@ -104,6 +105,7 @@ public class CondiutArticleTest {
 	 @Test(priority=4)
 	 public void editArticle()
 	 {
+		 extentTest=extentReports.createTest("editarticle Test");
 		 upArticle.navigateToEditArticle();
 		 edpage.update();
 		 Assert.assertEquals(upArticle.upBody(),"automation in testing");
@@ -112,7 +114,7 @@ public class CondiutArticleTest {
 	 @Test(priority=5)
 	 public void deleteArticle()
 	 {
-		 
+		 extentTest=extentReports.createTest("deleteArticle Test");
 		 upArticle.deleteArticle();
 		// driver.switchTo().alert().accept();
 		 Alert alert=driver.switchTo().alert();
