@@ -123,7 +123,7 @@ public class CondiutArticleTest {
 	  @AfterMethod
 	  public void teardown(ITestResult result)
 	  {
-		  extentTest.assignAuthor("AutomationTestet1-pragathi")
+		  extentTest.assignAuthor("AutomationTester1-pragathi")
 		  .assignCategory("Regression Test")
 		  .assignDevice(System.getProperty("os.name"))
 		  .assignDevice(System.getProperty("os.version"));
